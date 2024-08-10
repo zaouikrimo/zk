@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zaoui Game</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="info">
+    <div>المستوى: <span id="level">1</span></div>
+    <div>النتيجة: <span id="score">0</span></div>
+    <div>الوقت: <span id="time">00:00</span></div>
+  </div>
+  <canvas width="320" height="640" id="game"></canvas>
+  
+  <div class="buttons">
+    <button id="info-btn">معلومات</button>
+    <button id="pause-btn">إيقاف مؤقت</button>
+    <button id="restart-btn">إعادة</button>
+  </div>
+  
+  <div id="info-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>معلومات عن اللعبة</h2>
+      <p>تاريخ اللعبة: ...</p>
+      <p>قوانين اللعبة: ...</p>
+      <p>أفضل اللاعبين: ...</p>
+    </div>
+  </div>
+  
+  <audio id="background-music" loop>
+    <source src="background-music.mp3" type="audio/mpeg">
+    متصفحك لا يدعم تشغيل الصوت.
+  </audio>
+  <script src="script.js"></script>
+</body>
+</html>
